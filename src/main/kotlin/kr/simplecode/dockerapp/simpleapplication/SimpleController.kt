@@ -8,6 +8,6 @@ class SimpleController {
 
     @GetMapping("/hello")
     fun hello(): String {
-        return "Hello, Docker!"
+        return "Hello, Docker Bind Mount!"
     }
 }
