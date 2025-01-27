@@ -14,7 +14,7 @@ CMD ["./gradlew","dependencies","--no-daemon"]
 COPY . /app
 
 # 도커 컨테이너 내부의 8080번 포트를 외부로 노출
-EXPOSE 8080
+EXPOSE $PORT
 
 # ENTRYPOINT를 사용해 컨테이너가 시작될 때 실행할 명령어를 지정
 CMD ["./gradlew", "bootRun", "--no-daemon"]
